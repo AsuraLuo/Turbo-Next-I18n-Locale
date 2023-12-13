@@ -1,0 +1,26 @@
+{
+  "name": "@dcloud/shop-commitizen-config",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "commit": "/node_modules/cz-customizable/standalone.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "/node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "/index.js"
+    }
+  },
+  "scripts": {
+    "commit": "./node_modules/cz-customizable/standalone.js"
+  },
+  "dependencies": {
+    "cz-customizable": "^7.0.0"
+  }
+}

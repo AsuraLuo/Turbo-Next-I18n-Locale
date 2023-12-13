@@ -1,0 +1,33 @@
+{
+  "name": "@dcloud/shop-vite-config",
+  "version": "0.1.0",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "index.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@swc/plugin-emotion": "^2.5.68",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "http2-proxy": "^5.0.53",
+    "rollup": "^4.6.1",
+    "vite": "^4.5.0",
+    "vite-plugin-banner": "^0.7.0",
+    "vite-plugin-html": "^3.2.0"
+  },
+  "devDependencies": {
+    "@dcloud/shop-eslint-config": "workspace:^",
+    "@dcloud/shop-ts-config": "workspace:^",
+    "rollup-plugin-visualizer": "^5.9.0"
+  }
+}

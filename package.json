@@ -1,0 +1,30 @@
+{
+  "name": "@dcloud/customer-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "husky:prepare": "husky install",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
+  },
+  "devDependencies": {
+    "@dcloud/shop-commitizen-config": "workspace:^",
+    "@dcloud/shop-commitlint-config": "workspace:^",
+    "@dcloud/shop-eslint-config": "workspace:^",
+    "@dcloud/shop-prettier-config": "workspace:^",
+    "@dcloud/shop-stylelint-config": "workspace:^",
+    "@dcloud/shop-ts-config": "workspace:^",
+    "eslint": "^8.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "turbo": "^1.6.3",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
