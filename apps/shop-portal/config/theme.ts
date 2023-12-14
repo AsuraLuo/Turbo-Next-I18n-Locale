@@ -6,5 +6,5 @@ export const theme: Theme = {
     black: '#00000',
     primary: '#00A9AF'
   },
-  namespace: 'epricor'
+  namespace: ''
 }
